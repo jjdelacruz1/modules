@@ -2,6 +2,8 @@ var os = require('os');
 
 var dns = require('dns');
 
+var timers = require('timers');
+
 var w3 = dns.lookup('w3schools.com', function (err, addresses, family) {
   console.log(addresses);
 });
