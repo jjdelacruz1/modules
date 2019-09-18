@@ -6,4 +6,4 @@ var random = require('./require_statements_5/randomValue.js');
 
 console.log(dog)
 console.log(cat)
-console.log(random(6, 18));
+console.log(random(80, 18));

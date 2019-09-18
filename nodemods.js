@@ -8,10 +8,19 @@ var w3 = dns.lookup('w3schools.com', function (err, addresses, family) {
 
 console.log(os.freemem());
 
-var tic = setInterval(() => {
-  console.log("tic")
-}, 1000);
+var oneSecond = 1000;
 
-var tock = setInterval(() => {
-  console.log("tock")
-}, 1000);
+var tic = setInterval(ticTock, oneSecond);
+
+var tic = true
+
+function ticTock () {
+
+  if (tic) {
+    console.log("tic")
+    tic = false
+  } else {
+    console.log("tock")
+    tic = true
+  }
+}
